@@ -13,11 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
-Route::get('/hello',[\App\Http\Controllers\Controller:: class, 'hello']);
+Route::get('/',[\App\Http\Controllers\Controller:: class, 'blog']);
+Route::get('/form',[\App\Http\Controllers\Controller:: class, 'form']);
 
 
 Auth::routes();

@@ -1,28 +1,5 @@
 @extends('layout')
 
-@section('header')
-    <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">My Blog</a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Good articles</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Better articles</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Best articles</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    </div>
-@endsection
 
 @section('content')
     <div class="container">
@@ -32,10 +9,6 @@
     </div>
 @endsection
 
-@section('footer')
-    <div class="container text-center">
-        <p class="text-secondary m-5">@Me 2021</p>
-    </div>
-@endsection
+
 
 

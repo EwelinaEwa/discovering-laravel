@@ -11,8 +11,12 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    public function hello(){
-        return view('hello');
+    public function blog(){
+        return view('blog');
+    }
+
+    public function form(){
+        return view('form');
     }
 
 }
