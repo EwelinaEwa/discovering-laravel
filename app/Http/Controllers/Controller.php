@@ -15,9 +15,5 @@ class Controller extends BaseController
         return view('blog');
     }
 
-    public function form(){
-        return view('form');
-    }
-
 }
 
