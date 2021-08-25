@@ -17,9 +17,9 @@ use Illuminate\Support\Facades\Route;
 //    return view('welcome');
 //});
 
-Route::get('/',[\App\Http\Controllers\Controller:: class, 'blog']);
-Route::get('blog',[\App\Http\Controllers\Controller:: class, 'blog']);
-Route::get('form',[App\Http\Controllers\RegisterController:: class, 'create']);
+Route::get('/',[\App\Http\Controllers\Controller:: class, 'blog'])->name('home');
+Route::get('blog',[\App\Http\Controllers\Controller:: class, 'blog'])->name('blog');
+Route::get('form',[App\Http\Controllers\RegisterController:: class, 'create'])->name('create');
 Route::post('form',[App\Http\Controllers\RegisterController:: class, 'store']);
 
 

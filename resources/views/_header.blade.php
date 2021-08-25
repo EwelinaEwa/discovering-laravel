@@ -1,14 +1,14 @@
 <header>
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="blog">My Blog</a>
+            <a class="navbar-brand" href="{{ route('home') }}">My Blog</a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="blog">Home</a>
+                        <a class="nav-link" href="{{ route('blog') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="form">Form</a>
+                        <a class="nav-link" href="{{ route('create') }}">Form</a>
                     </li>
 
                     <li class="nav-item">
