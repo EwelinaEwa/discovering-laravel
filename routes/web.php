@@ -19,8 +19,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',[\App\Http\Controllers\Controller:: class, 'blog'])->name('home');
 Route::get('blog',[\App\Http\Controllers\Controller:: class, 'blog'])->name('blog');
-Route::get('form',[App\Http\Controllers\RegisterController:: class, 'create'])->name('create');
-Route::post('form',[App\Http\Controllers\RegisterController:: class, 'store']);
+Route::get('form',[App\Http\Controllers\Controller:: class, 'create'])->name('create');
+Route::post('form',[App\Http\Controllers\Controller:: class, 'store']);
 
 
 //Auth::routes();
