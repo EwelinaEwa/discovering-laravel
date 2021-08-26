@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\NewUser;
+use App\Models\CreateUsers;
+use App\Models\Users;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -14,8 +15,8 @@ class Controller extends BaseController
 
     public function blog()
     {
-        $users = NewUser::get();
-        dd($users);
+//        $users = Users::get();
+//        dd($users);
 
         return view('blog');
     }
@@ -35,9 +36,13 @@ class Controller extends BaseController
 
         $attributes['password'] = bcrypt($attributes['password']);
 
-        return redirect('blog');
-    }
 
+        CreateUsers::create($attributes);
+
+        return redirect('blog');
+
+//        return request()->only(['email','password']);
+    }
 
 }
 
